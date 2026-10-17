@@ -1,6 +1,6 @@
 /* =========================================================
    LAN Chat – Minimal Stylesheet
-   White background, black text, no frills.
+   Black background, blue text throughout.
    ========================================================= */
 
 * {
@@ -14,8 +14,8 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                  "Helvetica Neue", Arial, sans-serif;
     font-size: 15px;
-    color: #000;
-    background: #fff;
+    color: #4fa3cd;
+    background: #000;
 }
 
 /* ----- Chat layout ----- */
@@ -42,13 +42,15 @@ html, body {
 
 .msg .timestamp {
     font-size: 13px;
-    color: #555;
+    color: #4fa3cd;
+    opacity: 0.6;
     margin-bottom: 2px;
 }
 
 .msg .text {
     white-space: pre-wrap;
     word-break: break-word;
+    color: #4fa3cd;
 }
 
 /* ----- Input area ----- */
@@ -57,8 +59,9 @@ html, body {
     display: flex;
     gap: 8px;
     padding: 10px 16px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #4fa3cd;
     flex-shrink: 0;
+    background: #000;
 }
 
 #message-input {
@@ -66,21 +69,30 @@ html, body {
     padding: 8px 10px;
     font-size: 15px;
     font-family: inherit;
-    border: 1px solid #999;
+    border: 1px solid #4fa3cd;
     outline: none;
     resize: none;
+    background: #000;
+    color: #4fa3cd;
+}
+
+#message-input::placeholder {
+    color: #4fa3cd;
+    opacity: 0.5;
 }
 
 #send-btn {
     padding: 8px 20px;
     font-size: 15px;
     cursor: pointer;
-    border: 1px solid #999;
-    background: #fff;
+    border: 1px solid #4fa3cd;
+    background: #000;
+    color: #4fa3cd;
     flex-shrink: 0;
     align-self: flex-end;
 }
 
 #send-btn:hover {
-    background: #f0f0f0;
+    background: #4fa3cd;
+    color: #000;
 }
